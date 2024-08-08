@@ -25,12 +25,12 @@ function displayBooks(){
         bookCard.classList.add('bookCard');
 
         const bookInfo = `
-        <p>Title: ${book.title}</p>
-        <p>Author: ${book.author}</p>
-        <p>Pages: ${book.pages}</p>
-        <p>Read: ${book.read}</p>
-        <button onclick="removeBook(${index})">Remove</button>
-        <button onclick="toggleReadStatus(${index})">Toggle Read</button>
+        <p>Title:- ${book.title}</p>
+        <p>Author:- ${book.author}</p>
+        <p>Pages:- ${book.pages}</p>
+        <p>Read:- ${book.read}</p>
+        <button class="remove" onclick="removeBook(${index})">Remove</button>
+        <button class="toggle" onclick="toggleReadStatus(${index})">Toggle Read</button>
         `;
         bookCard.innerHTML = bookInfo;
         libraryDiv.appendChild(bookCard);
@@ -67,5 +67,5 @@ document.getElementById('bookForm').addEventListener('submit', (event) => {
 });
 
 // Manually add a few books to see the display
-addBookToLibrary(new Book('The Great Gatsby', 'F. Scott Fitzgerald', 218, true));
-addBookToLibrary(new Book('1984', 'George Orwell', 328, false));
+// addBookToLibrary(new Book('The Great Gatsby', 'F. Scott Fitzgerald', 218, true));
+// addBookToLibrary(new Book('1984', 'George Orwell', 328, false));

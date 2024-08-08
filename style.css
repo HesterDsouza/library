@@ -1,21 +1,38 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px;
+    background-color: #e3fcee;
 }
 
-.myLibrary{
-    background-color: #d3ffe5;
+.libTitle{
+    display: flex;
+    justify-content: center;
+}
 
+.libTitle h1{
+    font-weight: bold;
+    text-shadow: 4px 6px 2px #b7b7b7;
 }
 
 .bookCard{
-    border: 1px solid black;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
     margin: 10px 0px;
+    background-color: #fff;
+    width: 240px;
+    box-shadow: 4px 4px 4px 1px #9b9b9b;
+}
+
+.bookCard p{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .bookCard button{
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .removebook{
@@ -27,10 +44,54 @@ body{
     margin-bottom: 20px;
 }
 
+#bookForm div{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#bookForm button{
+    border: none;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: rgb(0, 157, 5);
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
 #newBookBtn{
     border: none;
     border-radius: 10px;
     color: #fff;
     background-color: #6382fb;
     padding: 8px 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.remove, .toggle{
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.remove{
+    background-color: red;
+}
+
+.toggle{
+    background-color: #e6b20a;
+}
+
+#library{
+    display: flex;
+    gap: 20px;
 }
